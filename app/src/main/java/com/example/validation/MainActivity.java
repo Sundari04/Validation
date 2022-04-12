@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 if(Uname1.getText().toString().matches("[a-zA-Z]+") && (Pass1.getText().toString().matches("[0-9]+"))&&(Pass1.getText().toString().length()==4)){
                     Toast.makeText(getApplicationContext(),"Successful",Toast.LENGTH_SHORT).show();
             }
-                else if(!(Uname.getText().toString().matches("[a-zA-z]+"))){
+                else if(!(Uname1.getText().toString().matches("[a-zA-z]+"))){
                     Toast.makeText(getApplicationContext(),"Username should only contain alphabets",Toast.LENGTH_SHORT).show();
 
                 }
