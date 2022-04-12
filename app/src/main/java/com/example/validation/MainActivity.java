@@ -2,6 +2,7 @@ package com.example.validation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if(Uname1.getText().toString().matches("[a-zA-Z]+") && (Pass1.getText().toString().matches("[0-9]+"))&&(Pass1.getText().toString().length()==4)){
                     Toast.makeText(getApplicationContext(),"Successful",Toast.LENGTH_SHORT).show();
+                    Intent intent=new Intent(getApplicationContext(),MainActivity2.class);
+                    startActivity(intent);
             }
                 else if(!(Uname1.getText().toString().matches("[a-zA-z]+"))){
                     Toast.makeText(getApplicationContext(),"Username should only contain alphabets",Toast.LENGTH_SHORT).show();
@@ -34,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if(!(Pass1.getText().toString().length() ==4)){
                     Toast.makeText(getApplicationContext(),"Password should not be more than 4 numbers",Toast.LENGTH_SHORT).show();
+
                 }
         } });
 
