@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/uname1"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Name" />
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <EditText
+        android:id="@+id/pass1"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Password" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:text="Validate" />
+</LinearLayout>
